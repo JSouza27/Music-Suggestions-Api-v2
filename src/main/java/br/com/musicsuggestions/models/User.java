@@ -1,26 +1,50 @@
 package br.com.musicsuggestions.models;
 
+import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import java.util.List;
+
+@Entity
+@Table(name="users")
 public class User {
 
-  private float id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private int id;
+
+  @Column(name="first_name", nullable = false)
   private String firstName;
+
+  @Column(name="last_name", nullable = false)
   private String lastName;
+
+  @Column(nullable = false)
   private String email;
+
+  @Column(nullable = false)
   private String password;
 
-  public User(float id, String firstName, String lastName, String email, String password) {
-    this.id = id;
+  @OneToMany
+  private List<PlaylistHistory> playlist;
+
+  public User() {
+  }
+
+  public User(String firstName, String lastName, String email, String password) {
+    super();
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;
     this.password = password;
   }
 
-  public float getId() {
+  public int getId() {
     return id;
   }
 
-  public void setId(float id) {
+  public void setId(int id) {
     this.id = id;
   }
 
@@ -54,5 +78,13 @@ public class User {
 
   public void setPassword(String password) {
     this.password = password;
+  }
+
+  public List<PlaylistHistory> getPlaylist() {
+    return playlist;
+  }
+
+  public void setPlaylist(List<PlaylistHistory> playlist) {
+    this.playlist = playlist;
   }
 }
