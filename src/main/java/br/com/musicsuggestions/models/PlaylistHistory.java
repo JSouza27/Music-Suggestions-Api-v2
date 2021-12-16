@@ -16,19 +16,14 @@ public class PlaylistHistory {
   private String playlist;
 
   @ManyToOne
-  @JoinColumn(name = "id_user")
+  @JoinColumn(name = "user_id")
   private User user;
-
-  @CreatedDate
-  @Column(name = "create_at")
-  private Date createAt;
 
   public PlaylistHistory() {
   }
 
-  public PlaylistHistory(String playlist, User user) {
+  public PlaylistHistory(String playlist) {
     this.playlist = playlist;
-    this.user = user;
   }
 
   public int getId() {
@@ -53,13 +48,5 @@ public class PlaylistHistory {
 
   public void setUser(User user) {
     this.user = user;
-  }
-
-  public Date getCreateAt() {
-    return createAt;
-  }
-
-  public void setCreateAt(Date createAt) {
-    this.createAt = createAt;
   }
 }

@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5107c01-2762-4233-8cbb-d00eebc98b46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/controller/PlaylistHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/dto/PlaylistHistoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/repositories/PlaylistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/service/PlaylistHistoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/models/PlaylistHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/models/PlaylistHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/musicsuggestions/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/musicsuggestions/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/musicsuggestions/models/PlaylistHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/musicsuggestions/models/PlaylistHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/musicsuggestions/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/musicsuggestions/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/musicsuggestions/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/musicsuggestions/service/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,21 +135,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/musicsuggestions/service/UserAuthenticationService.java</url>
-          <line>20</line>
-          <properties class="br.com.musicsuggestions.service.UserAuthenticationService" method="authenticate">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Music_Suggestions_Api_v2$MusicSuggestionsApiV2Application.ic" NAME="MusicSuggestionsApiV2Application Coverage Results" MODIFIED="1639392791289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

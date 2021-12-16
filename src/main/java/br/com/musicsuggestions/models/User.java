@@ -27,7 +27,7 @@ public class User {
   private String password;
 
   @OneToMany
-  private List<PlaylistHistory> playlist;
+  private List<PlaylistHistory> playlists;
 
   public User() {
   }
@@ -80,11 +80,11 @@ public class User {
     this.password = password;
   }
 
-  public List<PlaylistHistory> getPlaylist() {
-    return playlist;
+  public List<PlaylistHistory> getPlaylists() {
+    return playlists;
   }
 
-  public void setPlaylist(List<PlaylistHistory> playlist) {
-    this.playlist = playlist;
+  public void setPlaylists(List<PlaylistHistory> playlists) {
+    this.playlists = playlists;
   }
 }

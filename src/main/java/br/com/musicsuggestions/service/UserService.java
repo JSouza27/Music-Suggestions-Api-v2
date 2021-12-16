@@ -1,5 +1,6 @@
 package br.com.musicsuggestions.service;
 
+import br.com.musicsuggestions.models.PlaylistHistory;
 import br.com.musicsuggestions.models.User;
 import br.com.musicsuggestions.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

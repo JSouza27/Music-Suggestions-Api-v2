@@ -1,9 +1,7 @@
 package br.com.musicsuggestions.controller;
 
-import br.com.musicsuggestions.dto.LoginDTO;
-import br.com.musicsuggestions.dto.UserDTO;
-import br.com.musicsuggestions.dto.UserLoginDTO;
-import br.com.musicsuggestions.dto.UserResponseDTO;
+import br.com.musicsuggestions.dto.*;
+import br.com.musicsuggestions.models.PlaylistHistory;
 import br.com.musicsuggestions.models.User;
 import br.com.musicsuggestions.service.UserAuthenticationService;
 import br.com.musicsuggestions.service.UserService;
@@ -15,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/v2")
 public class UserController {
@@ -40,8 +39,8 @@ public class UserController {
   }
 
   @PostMapping("/login")
-  public ResponseEntity<UserResponseDTO> login(@RequestBody @Valid LoginDTO infoLogin) {
+  public ResponseEntity<UserLoginDTO> login(@RequestBody @Valid LoginDTO infoLogin) {
     User user = userAuthenticationService.authenticate(infoLogin);
-    return new ResponseEntity<>(UserResponseDTO.userResponseDTO(user), HttpStatus.OK);
+    return new ResponseEntity<>(UserLoginDTO.userLoginDTO(user), HttpStatus.OK);
   }
 }
